@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/rty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop" />
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:id="@+id/l1"
+                android:visibility="visible"
+                android:background="@drawable/invisibleborder"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:padding="5dp"
+                    android:text="@string/ud"
+                    android:textColor="@color/QRCodeBlackColor"
+                    android:textStyle="bold" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/invisibleborder">
+
+                    <TextView
+                        android:id="@+id/vordernum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="2dp"
+                        android:paddingTop="2dp"
+                        android:textColor="@color/QRCodeBlackColor" />
+
+                    <TextView
+                        android:id="@+id/vdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/vordernum"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:padding="5dp"
+                        android:textColor="@color/QRCodeBlackColor"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:visibility="gone"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/invisibleborder">
+
+
+                    <com.android.volley.toolbox.NetworkImageView
+                        android:id="@+id/vImage"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="5dp"
+                        android:scaleType="centerCrop" />
+
+
+                    <TextView
+                        android:id="@+id/vname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="2dp"
+                        android:layout_toEndOf="@+id/vImage"
+                        android:layout_toRightOf="@+id/vImage"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="@color/QRCodeBlackColor"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:id="@+id/vsales"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/pImage"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="@color/QRCodeBlackColor"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/vaddr"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/vname"
+                        android:layout_toEndOf="@+id/vImage"
+                        android:layout_toRightOf="@+id/vImage"
+                        android:padding="5dp"
+                        android:textColor="@color/QRCodeBlackColor"
+                        android:textSize="10sp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+
+                    android:background="@drawable/invisibleborder">
+
+                    <TextView
+                        android:id="@+id/advpaids"
+                        android:layout_width="200dp"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="@color/QRCodeBlackColor" />
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:layout_height="wrap_content">
+
+                      <TextView
+                          android:id="@+id/delieverydates"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_alignParentLeft="true"
+                          android:layout_alignParentStart="true"
+                          android:layout_below="@+id/advpaids"
+                          android:padding="5dp"
+                          android:text=""
+                          android:textColor="@color/QRCodeBlackColor" />
+
+                      <TextView
+                          android:id="@+id/deliverytimes"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:padding="5dp"
+                          android:text=""
+                          android:textColor="@color/QRCodeBlackColor"
+                          android:layout_alignParentTop="true"
+                          android:layout_alignParentRight="true"
+                          android:layout_alignParentEnd="true" />
+
+                      <TextView
+                          android:id="@+id/derro"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:padding="5dp"
+                          android:text="Error:"
+                          android:visibility="gone"
+                          android:textColor="@color/QRCodeBlackColor"
+                          android:layout_alignParentTop="true"
+                          android:layout_alignParentRight="true"
+                          android:layout_alignParentEnd="true" />
+
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:orientation="horizontal"
+                         android:gravity="center"
+                         android:layout_height="wrap_content">
+
+                         <Button
+                             android:id="@+id/dcorrect"
+                             android:layout_width="155dp"
+                             android:layout_height="wrap_content"
+                             android:layout_margin="5dp"
+                             android:background="@color/colorAccent"
+                             android:text="VERIFY"
+                             android:textColor="@color/QRCodeWhiteColor"
+                             android:textStyle="bold" />
+
+
+                         <Button
+                             android:id="@+id/derror"
+                             android:layout_width="155dp"
+                             android:layout_height="wrap_content"
+                             android:layout_margin="5dp"
+                             android:background="@color/colorAccent"
+                             android:text="ERROR"
+                             android:textColor="@color/QRCodeWhiteColor"
+                             android:textStyle="bold" />
+
+
+                     </LinearLayout>
+
+
+
+
+
+
+
+
+
+                  </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/leftovers"
+                        android:layout_width="200dp"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="@color/QRCodeBlackColor" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/views"
+                    android:layout_alignStart="@+id/views"
+                    android:visibility="gone"
+
+                    android:layout_below="@+id/views"
+                    android:background="#ffff">
+
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="18dp"
+                            android:layout_marginTop="5dp"
+                             />
+
+                        <TextView
+                            android:id="@+id/vemail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="35dp"
+                            android:padding="5dp"
+                            android:text="raydrriger@gmail.com" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/llike"
+                            android:layout_width="wrap_content"
+                            android:layout_height="18dp"
+                            android:layout_marginTop="5dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/vphone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="8801488020" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="bottom"
+                    android:layout_height="match_parent">
+
+
+                    <Button
+                        android:id="@+id/vpi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAccent"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:text="@string/pi"
+                        android:textColor="@color/QRCodeWhiteColor"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

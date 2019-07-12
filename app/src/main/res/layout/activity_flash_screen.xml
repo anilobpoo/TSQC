@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_flash_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+        android:id="@+id/factivity_storess"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:visibility="visible"
+        android:scaleType="centerCrop" />
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@color/cardview_dark_background" />
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/imageView3"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="64dp"
+        android:scaleType="centerCrop"
+         />
+
+    <TextView
+        android:id="@+id/storeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/QRCodeBlackColor"
+        android:textSize="25sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="@string/welcome"
+        android:textColor="@color/QRCodeBlackColor"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
+
+    <TextView
+        android:id="@+id/storetype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/adminName"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="@color/QRCodeBlackColor" />
+
+    <TextView
+        android:id="@+id/adminName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView7"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="@color/QRCodeBlackColor"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/storeaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/storeEmail"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textColor="@color/QRCodeBlackColor" />
+
+    <TextView
+        android:id="@+id/storeEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/storetype"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textColor="@color/QRCodeBlackColor" />
+
+    <TextView
+        android:id="@+id/storeNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/storetype"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textColor="@color/QRCodeBlackColor" />
+
+    <TextView
+        android:id="@+id/triplink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/storeaddress"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textColor="@color/QRCodeBlackColor"
+        android:textColorLink="@color/QRCodeBlackColor" />
+
+
+    <ProgressBar
+        android:id="@+id/circular_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:indeterminate="false"
+        android:max="48"
+        android:progress="1"
+        android:progressDrawable="@drawable/circular_progressbar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/storeaddress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp" />
+
+
+
+</RelativeLayout>

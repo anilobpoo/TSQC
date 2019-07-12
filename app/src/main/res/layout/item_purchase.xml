@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingEnd="3dp"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:paddingStart="3dp"
+    android:paddingTop="3dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/invisibleborder">
+
+
+            <TextView
+                android:id="@+id/pname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/ptotal"
+                android:layout_toRightOf="@+id/ptotal"
+                android:padding="2dp"
+                android:text="Shirt"
+                android:textColor="@color/QRCodeBlackColor"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/pqty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:padding="2dp"
+                android:text="Quantity"
+                android:textColor="@color/QRCodeBlackColor"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/pprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/pqty"
+                android:layout_alignStart="@+id/pqty"
+                android:layout_below="@+id/pqty"
+                android:padding="2dp"
+                android:text="Price"
+                android:textColor="@color/zxing_custom_viewfinder_mask"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignLeft="@+id/pqty"
+                android:layout_alignStart="@+id/pqty"
+                android:layout_below="@+id/pqty"
+                android:layout_marginTop="5dp"
+                android:background="@color/bg_screen2"
+                android:padding="2dp"
+                android:text="Fabric Details"
+                android:textColor="@color/QRCodeBlackColor"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignLeft="@+id/relativeLayout6"
+                android:layout_alignStart="@+id/relativeLayout6"
+                android:layout_below="@+id/relativeLayout6"
+                android:layout_marginTop="5dp"
+                android:background="@color/bg_screen2"
+                android:padding="2dp"
+                android:text="Extra Details"
+                android:textColor="@color/QRCodeBlackColor"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignEnd="@+id/textView37"
+                android:layout_alignRight="@+id/textView37"
+                android:layout_below="@+id/stylelayout"
+                android:layout_marginTop="5dp"
+                android:background="@color/bg_screen2"
+                android:padding="2dp"
+                android:text="Style Details"
+                android:textColor="@color/QRCodeBlackColor"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView30"
+                android:layout_alignStart="@+id/textView30"
+                android:layout_below="@+id/textView30"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border"
+                android:visibility="gone">
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/fabric_image1"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginStart="9dp"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/fabric_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@+id/fabric_image1"
+                    android:layout_toRightOf="@+id/fabric_image1"
+                    android:padding="3dp"
+                    android:textColor="@color/QRCodeBlackColor"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/fab_1_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/fab_1_meters"
+                    android:layout_alignStart="@+id/fab_1_meters"
+                    android:layout_below="@+id/fab_1_meters"
+                    android:padding="3dp"
+                    android:textColor="@color/QRCodeBlackColor"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/fab_1_meters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/fabric_one"
+                    android:layout_alignStart="@+id/fabric_one"
+                    android:layout_below="@+id/fabric_one"
+                    android:padding="3dp"
+                    android:textColor="@color/QRCodeBlackColor"
+                    android:textSize="15sp" />
+
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/fabric_image2"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_alignTop="@+id/fabric_image1"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/fabric_one"
+                    android:layout_toRightOf="@+id/fabric_one"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/fabric_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_toEndOf="@+id/fabric_image2"
+                    android:layout_toRightOf="@+id/fabric_image2"
+                    android:padding="3dp"
+                    android:textColor="@color/QRCodeBlackColor"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/fab_2_meters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignLeft="@+id/fabric_two"
+                    android:layout_alignStart="@+id/fabric_two"
+                    android:layout_below="@+id/fabric_two"
+                    android:padding="3dp"
+                    android:textColor="@color/QRCodeBlackColor"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/fab_2_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/fab_2_meters"
+                    android:layout_alignStart="@+id/fab_2_meters"
+                    android:layout_below="@+id/fab_2_meters"
+                    android:padding="3dp"
+                    android:textColor="@color/QRCodeBlackColor"
+                    android:textSize="15sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/stylelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/relativeLayout6"
+                android:layout_alignLeft="@+id/textView37"
+                android:layout_alignRight="@+id/relativeLayout6"
+                android:layout_alignStart="@+id/textView37"
+                android:layout_below="@+id/textView37"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border"
+                android:visibility="gone">
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/pstyleimage"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_margin="9dp"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/pstyleimage"
+                    android:layout_toEndOf="@+id/pstyleimage"
+                    android:layout_toRightOf="@+id/pstyleimage"
+                    android:padding="5dp"
+                    android:textColor="@color/QRCodeBlackColor"
+                    android:textStyle="italic" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/ptotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/pname"
+                android:layout_alignBottom="@+id/pname"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="9dp"
+                android:layout_marginRight="9dp"
+                android:padding="2dp"
+                android:text="3000"
+                android:visibility="gone"
+                android:textColor="@color/QRCodeBlackColor"
+                android:textSize="30sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/stylelayout"
+                android:layout_alignLeft="@+id/textView40"
+                android:layout_alignRight="@+id/stylelayout"
+                android:layout_alignStart="@+id/textView40"
+                android:layout_below="@+id/textView40"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_margin="5dp" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/down"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/ic_remove_red_eye_black_36dp" />
+
+
+        </RelativeLayout>
+
+
+
+</LinearLayout>

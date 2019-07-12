@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="2dp"
+    android:layout_height="wrap_content">
+
+
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="horizontal">
+
+
+
+
+
+
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_toRightOf="@+id/ocheckbox1"
+           android:layout_weight="1"
+           >
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_weight="1"
+               >
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:paddingLeft="5dp"
+                   android:textStyle="bold"
+                   android:text="Name"
+
+                   android:textColor="@color/QRCodeBlackColor"
+                   android:layout_weight="1"
+                   />
+               <TextView
+                   android:id="@+id/oextraitemname"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/QRCodeBlackColor"
+
+                   android:layout_weight="1"/>
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_weight="1"
+               >
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:paddingLeft="5dp"
+                   android:textStyle="bold"
+                   android:text="Quantity"
+
+                   android:textColor="@color/QRCodeBlackColor"
+                   android:layout_weight="1"
+                   />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:visibility="visible"
+               android:textColor="@color/QRCodeBlackColor"
+               android:id="@+id/oextraitemqty" />
+
+           </LinearLayout>
+
+
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_weight="1"
+               >
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:paddingLeft="5dp"
+                   android:text="Price:"
+                   android:textStyle="bold"
+                   android:textColor="@color/QRCodeBlackColor"
+                   android:layout_weight="1"
+                   />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:visibility="visible"
+               android:textColor="@color/QRCodeBlackColor"
+               android:id="@+id/oextraitemprice" />
+
+           </LinearLayout>
+       </LinearLayout>
+
+
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:id="@+id/linRadioBtn"
+           android:layout_weight="1"
+           android:layout_gravity="right"
+           android:gravity="right"
+           >
+
+           <RadioGroup
+               android:id="@+id/radgrp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <RadioButton
+
+                   android:text="Ok"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:theme="@style/BrandedCheckBox"
+                   android:id="@+id/ok"/>
+
+
+               <RadioButton
+
+                   android:text="Not Ok"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/notok"/>
+
+           </RadioGroup>
+
+
+       </LinearLayout>
+
+
+
+
+   </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d9ccd9"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/linRadioBtn"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ok"
+            android:theme="@style/BrandedCheckBox"
+            android:id="@+id/ocheckbox1"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not Ok"
+            android:id="@+id/ocheckbox2"/>
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

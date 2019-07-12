@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/psitems"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/cartempty"
+        android:visibility="gone"
+        android:textColor="@color/QRCodeBlackColor"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:layout_marginTop="175dp"
+        />
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/pst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="80dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        app:backgroundTint="@color/bordercolor" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/adv"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/tot"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:hint="Advance"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:visibility="gone" />
+
+
+        <EditText
+            android:id="@+id/pickupdate"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/adv"
+            android:layout_alignEnd="@+id/adv"
+            android:layout_alignLeft="@+id/adv"
+            android:layout_alignRight="@+id/adv"
+            android:layout_alignStart="@+id/adv"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:hint="Pick up date"
+            android:inputType="number"
+            android:padding="10dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toEndOf="@+id/pickupdate"
+            android:layout_toRightOf="@+id/pickupdate"
+            android:background="@drawable/border"
+            android:hint="Total"
+            android:padding="12dp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/picktime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/tot"
+            android:layout_alignLeft="@+id/tot"
+            android:layout_alignRight="@+id/tot"
+            android:layout_alignStart="@+id/tot"
+            android:layout_below="@+id/mygroups"
+            android:background="@drawable/border"
+            android:hint="Time"
+            android:padding="12dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/pick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/pickupdate"
+            android:layout_alignRight="@+id/pickupdate"
+            android:layout_below="@+id/mygroups"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+           />
+
+        <ImageView
+            android:id="@+id/ptime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/pick"
+            android:visibility="gone"
+             />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tot"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="TextView"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+
+        <ListView
+            android:id="@+id/mygroups"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:layout_above="@+id/button" />
+
+
+
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bordercolor"
+            android:text="Measurements"
+            android:textStyle="bold"
+            android:textColor="@color/cardview_light_background"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

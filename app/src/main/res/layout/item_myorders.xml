@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/QRCodeWhiteColor"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/oordernum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView9"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/imageView9"
+                android:layout_toRightOf="@+id/imageView9"
+                android:paddingBottom="2dp"
+                android:paddingLeft="2dp"
+                android:paddingTop="2dp"
+                android:textColor="@color/QRCodeBlackColor" />
+
+            <ImageView
+                android:id="@+id/overflow"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/odate"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_keyboard_arrow_down_black_36dp" />
+
+            <TextView
+                android:id="@+id/odate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/overflow"
+                android:layout_toStartOf="@+id/overflow"
+                android:padding="5dp"
+                android:textColor="@color/QRCodeBlackColor"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentLeft="true"
+
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:layout_marginStart="7dp"
+                card_view:srcCompat="@drawable/bcircle" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/pImage"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="5dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/oname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/pImage"
+                android:layout_toEndOf="@+id/pImage"
+                android:layout_toRightOf="@+id/pImage"
+                android:padding="5dp"
+                android:textColor="@color/QRCodeBlackColor"
+                android:textSize="18sp"
+                android:textStyle="normal|bold"
+                android:text="Order"/>
+
+
+            <TextView
+                android:id="@+id/oitems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/osales"
+                android:layout_marginTop="20dp"
+                android:padding="5dp"
+                android:textColor="@color/QRCodeBlackColor" />
+
+            <TextView
+                android:id="@+id/osales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/pImage"
+                android:padding="5dp"
+                android:textColor="@color/QRCodeBlackColor"
+                android:textSize="30sp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/oaddr"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/pImage"
+                android:layout_toRightOf="@+id/pImage"
+                android:padding="5dp"
+                android:textColor="@color/QRCodeBlackColor"
+                android:textSize="8sp" />
+
+        </RelativeLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/roundbutton"
+                        android:padding="3dp"
+                        card_view:srcCompat="@drawable/money" />
+
+
+                    <TextView
+                        android:id="@+id/advpaid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="left"
+                        android:padding="5dp"
+                        android:text="20000"
+                        android:textColor="@color/QRCodeBlackColor" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/imageView14"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/roundbutton"
+                        android:padding="3dp"
+                        card_view:srcCompat="@drawable/cash" />
+
+
+                    <TextView
+                        android:id="@+id/leftover"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="left"
+                        android:padding="5dp"
+                        android:text="50000"
+                        android:textColor="@color/QRCodeBlackColor" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/clip"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/imageView13"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignBottom="@+id/deliverytime"
+                        android:layout_alignLeft="@+id/leftover"
+                        android:layout_alignStart="@+id/leftover"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/tag"
+                        android:padding="2dp" />
+
+                    <TextView
+                        android:id="@+id/odeliverynumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignTop="@+id/imageView13"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toEndOf="@+id/imageView13"
+                        android:layout_toRightOf="@+id/imageView13"
+                        android:gravity="left"
+                        android:padding="4dp"
+                        android:text="11111"
+                        android:textColor="@color/QRCodeBlackColor" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:background="@drawable/wrongred"
+                        />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+<!--
+
+            <View
+                style="@style/Divider"
+                android:layout_above="@+id/relativeLayout"
+                android:layout_alignLeft="@+id/pImage"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_alignStart="@+id/pImage"
+                android:background="@color/QRCodeBlackColor"
+                android:padding="2dp" />
+-->
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/linearLayout13"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/advpaid"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/roundbutton"
+                        android:padding="3dp"
+                        card_view:srcCompat="@drawable/calendar" />
+
+                    <TextView
+                        android:id="@+id/delieverydate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imageView12"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toEndOf="@+id/imageView12"
+                        android:layout_toRightOf="@+id/imageView12"
+                        android:gravity="left"
+                        android:padding="4dp"
+                        android:text="16-1-1989"
+                        android:textColor="@color/QRCodeBlackColor" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_below="@+id/advpaid"
+                        android:layout_margin="5dp"
+                        android:layout_toEndOf="@+id/delieverydate"
+                        android:layout_toRightOf="@+id/delieverydate"
+                        android:background="@drawable/roundbutton"
+                        android:padding="3dp"
+                        card_view:srcCompat="@drawable/time" />
+
+                    <TextView
+                        android:id="@+id/deliverytime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imageView11"
+                        android:layout_alignEnd="@+id/advpaid"
+                        android:layout_alignRight="@+id/advpaid"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="left"
+                        android:padding="4dp"
+                        android:text="11:35"
+                        android:textColor="@color/QRCodeBlackColor" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/oitems"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView15"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignBottom="@+id/deliverytime"
+                    android:layout_alignLeft="@+id/leftover"
+                    android:layout_alignStart="@+id/leftover"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/roundbutton"
+                    android:padding="2dp"
+                    card_view:srcCompat="@drawable/landing" />
+
+                <ImageView
+                    android:id="@+id/idel"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignBottom="@+id/deliverytime"
+                    android:layout_alignLeft="@+id/leftover"
+                    android:layout_alignStart="@+id/leftover"
+                    android:layout_margin="5dp"
+                    card_view:srcCompat="@drawable/cancel" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/roundbutton"
+                    android:padding="2dp"
+                    android:src="@drawable/email_36" />
+
+                <TextView
+                    android:id="@+id/oemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="3dp"
+                    android:text="Email"
+                    android:textColor="@color/QRCodeBlackColor" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/cll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/llike"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/roundbutton"
+                    android:padding="2dp"
+                    android:src="@drawable/mobile_48" />
+
+                <TextView
+                    android:id="@+id/ophone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:autoLink="phone"
+                    android:padding="3dp"
+                    android:text="Call"
+                    android:textColor="@color/QRCodeBlackColor" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

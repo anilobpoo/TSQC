@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ootttt"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:background="@drawable/bg"
+        android:layout_height="match_parent"
+        />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <ListView
+            android:id="@+id/getfabric"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:layout_above="@+id/textView"
+            android:layout_below="@+id/linearLayout2" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/invisibleborder"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout2">
+
+            <Button
+                android:id="@+id/dscorrect"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorAccent"
+                android:text="VERIFY"
+                android:textColor="@color/QRCodeWhiteColor"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/dserror"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorAccent"
+                android:text="ERROR"
+                android:textColor="@color/QRCodeWhiteColor"
+                android:textStyle="bold" />
+
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/invisibleborder"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:layout_margin="5dp"
+
+            android:textSize="18dp"
+            android:textColor="@color/QRCodeWhiteColor"
+            android:text=""
+            android:layout_above="@+id/scanfabric"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView" />
+        <Button
+            android:id="@+id/scanfabric"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/QRCodeWhiteColor"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:text="Update" />
+
+
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

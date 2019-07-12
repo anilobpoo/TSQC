@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/rtsy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop" />
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:background="@drawable/invisibleborder"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Purchased Fabrics"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textColor="@color/QRCodeBlackColor"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Fabrics Not purchased"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:id="@+id/fab"
+                android:gravity="center"
+                android:textStyle="italic"
+                android:textSize="17dp"
+                android:textColor="@color/QRCodeBlackColor"
+                android:layout_height="wrap_content" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/llu1"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <!--<RelativeLayout
+                    android:id="@+id/relative1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                     >
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                         />
+
+                    <TextView
+                        android:id="@+id/text_wheels"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image"
+                        android:layout_centerHorizontal="true"
+                        android:text=" Text" />
+                </RelativeLayout>-->
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:id="@+id/sty"
+            android:visibility="visible"
+            android:background="@drawable/invisibleborder"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Purchased Styles"
+                android:textSize="17dp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/QRCodeBlackColor"
+                android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/llu"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+                </LinearLayout>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:id="@+id/con"
+            android:background="@drawable/invisibleborder"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Purchased Contrast"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textColor="@color/QRCodeBlackColor"
+                android:layout_height="wrap_content" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/lluff2"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:background="@drawable/invisibleborder"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Measurement Detail"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textColor="@color/QRCodeBlackColor"
+                android:layout_height="match_parent" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/mly"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:id="@+id/extraitemlin"
+            android:visibility="visible"
+            android:background="@drawable/invisibleborder"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Extra Items"
+                android:textSize="17dp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/QRCodeBlackColor"
+                android:layout_height="wrap_content" />
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollViewExtraitem"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/extraitemm"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+        <!--
+      other Extra itempurchased item informay
+       -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:id="@+id/oextrait"
+            android:background="@drawable/invisibleborder"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Other Extra Items"
+                android:textSize="17dp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/QRCodeBlackColor"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/oeitd"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:id="@+id/extrait"
+            android:background="@drawable/invisibleborder"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Extra Items"
+                android:textSize="17dp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/QRCodeBlackColor"
+                android:layout_height="wrap_content" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/extraitem"
+                    android:layout_width="120dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="120dp"
+
+                    android:layout_weight="1"/>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/linRadioBtnextraitem"
+                    >
+
+                    <RadioGroup
+                        android:id="@+id/radgrp1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton
+
+                            android:text="Ok"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/BrandedCheckBox"
+                            android:id="@+id/okextraitem"/>
+
+
+                        <RadioButton
+
+                            android:text="Not Ok"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/notokextraitem"/>
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:id="@+id/extraitemname"
+                        android:textColor="@color/QRCodeBlackColor"
+                        android:padding="10dp"/>
+
+                </LinearLayout>
+
+
+                <CheckBox
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkbox1"/>
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/extrain"
+
+            android:layout_margin="5dp"
+            android:background="@drawable/invisibleborder"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Extra Info"
+                android:textSize="17dp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/QRCodeBlackColor"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/extrainfo"
+                    android:layout_width="120dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"/>
+                <CheckBox
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkbox2"
+                    android:layout_weight="1"/>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/linRadioBtn"
+                    >
+
+                    <RadioGroup
+                        android:id="@+id/radgrp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton
+
+                            android:text="Ok"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/BrandedCheckBox"
+                            android:id="@+id/ok"/>
+
+
+                        <RadioButton
+
+                            android:text="Not Ok"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/notok"/>
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:id="@+id/extrainfoname"
+                        android:textColor="@color/QRCodeBlackColor"
+                        android:padding="10dp"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:background="@drawable/invisibleborder"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/dcorrect"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorAccent"
+                    android:text="VERIFY"
+                    android:visibility="gone"
+                    android:textColor="@color/QRCodeWhiteColor"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/derror"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorAccent"
+                    android:text="Submit"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/QRCodeWhiteColor"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+</RelativeLayout>

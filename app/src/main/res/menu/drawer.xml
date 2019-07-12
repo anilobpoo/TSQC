@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/orders"
+        android:checked="false"
+        android:title="Orders" />
+
+
+    <item
+        android:id="@+id/settings"
+        android:checked="false"
+        android:title="@string/action_settings"
+        android:visible="false" />
+    <item
+        android:id="@+id/delivery"
+        android:checked="false"
+        android:visible="false"
+        android:title="@string/delivery" />
+
+
+    <item
+        android:id="@+id/about"
+        android:checked="false"
+        android:title="@string/about" />
+
+    <item
+        android:id="@+id/support"
+        android:checked="false"
+        android:visible="false"
+        android:title="@string/support" />
+
+
+
+
+
+    <item
+        android:id="@+id/logout"
+        android:checked="false"
+        android:title="@string/logout" />
+
+</menu>

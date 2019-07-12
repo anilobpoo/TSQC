@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/aoddd"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:background="@drawable/bg"
+        android:layout_height="match_parent"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="Fabrics"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/QRCodeWhiteColor"
+                    android:layout_height="wrap_content" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/invisibleborder"
+                    android:layout_margin="5dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content">
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:layout_width="120dp"
+                            android:id="@+id/fab1image"
+                            android:layout_height="120dp"
+                            android:background="@drawable/invisibleborder"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:id="@+id/fab1meters"
+                                android:textSize="20dp"
+                                android:text=""
+                                android:textColor="@color/QRCodeWhiteColor"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:id="@+id/fab1price"
+                                android:textSize="20dp"
+                                android:text=""
+                                android:textColor="@color/QRCodeWhiteColor"
+                                android:layout_height="wrap_content" />
+
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/invisibleborder"
+                    android:layout_margin="5dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content">
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:layout_width="120dp"
+                            android:id="@+id/fab2image"
+                            android:layout_height="120dp"
+                            android:background="@drawable/invisibleborder"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:id="@+id/fab2meters"
+                                android:textSize="20dp"
+                                android:text=""
+                                android:textColor="@color/QRCodeWhiteColor"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:id="@+id/fab2price"
+                                android:textSize="20dp"
+                                android:text=""
+                                android:textColor="@color/QRCodeWhiteColor"
+                                android:layout_height="wrap_content" />
+
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/invisibleborder"
+                    android:layout_margin="5dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content">
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:layout_width="120dp"
+                            android:id="@+id/fab3image"
+                            android:layout_height="120dp"
+                            android:background="@drawable/invisibleborder"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:id="@+id/fab3meters"
+                                android:textSize="20dp"
+                                android:text=""
+                                android:textColor="@color/QRCodeWhiteColor"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:id="@+id/fab3price"
+                                android:textSize="20dp"
+                                android:text=""
+                                android:textColor="@color/QRCodeWhiteColor"
+                                android:layout_height="wrap_content" />
+
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/invisibleborder"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content">
+
+
+                      <com.android.volley.toolbox.NetworkImageView
+                          android:layout_width="120dp"
+                          android:id="@+id/fab4image"
+                          android:layout_height="120dp"
+                          android:background="@drawable/invisibleborder"/>
+
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:orientation="vertical"
+                          android:layout_marginLeft="5dp"
+                          android:layout_marginRight="5dp"
+                          android:layout_height="match_parent">
+
+                          <TextView
+                              android:layout_width="match_parent"
+                              android:id="@+id/fab4meters"
+                              android:textSize="20dp"
+                              android:text=""
+                              android:textColor="@color/QRCodeWhiteColor"
+                              android:layout_height="wrap_content" />
+
+                          <TextView
+                              android:layout_width="match_parent"
+                              android:id="@+id/fab4price"
+                              android:textSize="20dp"
+                              android:text=""
+                              android:textColor="@color/QRCodeWhiteColor"
+                              android:layout_height="wrap_content" />
+
+
+
+
+                      </LinearLayout>
+
+
+                  </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/invisibleborder"
+                    android:layout_margin="5dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content">
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:layout_width="120dp"
+                            android:id="@+id/fab5image"
+                            android:layout_height="120dp"
+                            android:background="@drawable/invisibleborder"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:id="@+id/fab5meters"
+                                android:textSize="20dp"
+                                android:text=""
+                                android:textColor="@color/QRCodeWhiteColor"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:id="@+id/fab5price"
+                                android:textSize="20dp"
+                                android:text=""
+                                android:textColor="@color/QRCodeWhiteColor"
+                                android:layout_height="wrap_content" />
+
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="Extra Fabrics"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/QRCodeWhiteColor"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/invisibleborder"
+                    android:layout_margin="5dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content">
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:layout_width="120dp"
+                            android:id="@+id/fab6image"
+                            android:layout_height="120dp"
+                            android:background="@drawable/invisibleborder"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:id="@+id/fab6meters"
+                                android:textSize="20dp"
+                                android:text=""
+                                android:textColor="@color/QRCodeWhiteColor"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:id="@+id/fab6price"
+                                android:textSize="20dp"
+                                android:text=""
+                                android:textColor="@color/QRCodeWhiteColor"
+                                android:layout_height="wrap_content" />
+
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/invisibleborder"
+                    android:layout_margin="5dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content">
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:layout_width="120dp"
+                            android:id="@+id/fab7image"
+                            android:layout_height="120dp"
+                            android:background="@drawable/invisibleborder"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:id="@+id/fab7meters"
+                                android:textSize="20dp"
+                                android:text=""
+                                android:textColor="@color/QRCodeWhiteColor"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:id="@+id/fab7price"
+                                android:textSize="20dp"
+                                android:text=""
+                                android:textColor="@color/QRCodeWhiteColor"
+                                android:layout_height="wrap_content" />
+
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/invisibleborder"
+                    android:layout_margin="5dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content">
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:layout_width="120dp"
+                            android:id="@+id/fab8image"
+                            android:layout_height="120dp"
+                            android:background="@drawable/invisibleborder"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:id="@+id/fab8meters"
+                                android:textSize="20dp"
+                                android:text=""
+                                android:textColor="@color/QRCodeWhiteColor"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:id="@+id/fab8price"
+                                android:textSize="20dp"
+                                android:text=""
+                                android:textColor="@color/QRCodeWhiteColor"
+                                android:layout_height="wrap_content" />
+
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/invisibleborder"
+                    android:layout_margin="5dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content">
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:layout_width="120dp"
+                            android:id="@+id/fab9image"
+                            android:layout_height="120dp"
+                            android:background="@drawable/invisibleborder"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:id="@+id/fab9meters"
+                                android:textSize="20dp"
+                                android:text=""
+                                android:textColor="@color/QRCodeWhiteColor"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:id="@+id/fab9price"
+                                android:textSize="20dp"
+                                android:text=""
+                                android:textColor="@color/QRCodeWhiteColor"
+                                android:layout_height="wrap_content" />
+
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/invisibleborder"
+                    android:layout_margin="5dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content">
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:layout_width="120dp"
+                            android:id="@+id/fab10image"
+                            android:layout_height="120dp"
+                            android:background="@drawable/invisibleborder"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:id="@+id/fab10meters"
+                                android:textSize="20dp"
+                                android:text=""
+                                android:textColor="@color/QRCodeWhiteColor"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:id="@+id/fab10price"
+                                android:textSize="20dp"
+                                android:text=""
+                                android:textColor="@color/QRCodeWhiteColor"
+                                android:layout_height="wrap_content" />
+
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nec"
+                    android:text="Next"
+                    android:background="@color/bordercolor"
+                    android:textColor="@color/QRCodeWhiteColor"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"/>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>
